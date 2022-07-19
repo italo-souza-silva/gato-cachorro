@@ -1,6 +1,3 @@
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -11,7 +8,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  bool _loading = true;
+  final bool _loading = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +27,7 @@ class _HomeState extends State<Home> {
                 const SizedBox(height: 50),
                 Center(
                   child: _loading
-                      ? Container(
+                      ? SizedBox(
                           width: 350,
                           child: Column(children: <Widget>[
                             Image.asset('assets/cat_dog_icon.png'),
@@ -39,7 +36,7 @@ class _HomeState extends State<Home> {
                         )
                       : Container(),
                 ),
-                Container(
+                SizedBox(
                   width: MediaQuery.of(context).size.width,
                   child: Column(children: <Widget>[
                     ElevatedButton(
