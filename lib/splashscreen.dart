@@ -1,8 +1,8 @@
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
-import 'package:splashscreen/splashscreen.dart';
 import 'package:gato_cachorro/home.dart';
+import 'package:easy_splash_screen/easy_splash_screen.dart';
 
 class MySplash extends StatefulWidget {
   const MySplash({Key? key}) : super(key: key);
@@ -14,17 +14,17 @@ class MySplash extends StatefulWidget {
 class _MySplashState extends State<MySplash> {
   @override
   Widget build(BuildContext context) {
-    return SplashScreen(
-      seconds: 2,
-      navigateAfterSeconds: Home(),
+    return EasySplashScreen(
+      logo: Image.asset('assets/cat_dog_icon.png'),
+      durationInSeconds: 2,
+      navigator: Home(),
       title: const Text('Classificador de gatos e cachorros',
           style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 25,
               color: Color(0x0000ffff))),
-      image: Image.asset('assets/cat_dog_icon.png'),
       backgroundColor: Colors.blueAccent,
-      photoSize: 60,
+      showLoader: true,
       loaderColor: Color(0x004242),
     );
   }
