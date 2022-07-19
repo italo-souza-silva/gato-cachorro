@@ -17,15 +17,14 @@ class _MySplashState extends State<MySplash> {
     return EasySplashScreen(
       logo: Image.asset('assets/cat_dog_icon.png'),
       durationInSeconds: 2,
-      navigator: Home(),
+      logoSize: 100,
+      navigator: const Home(),
       title: const Text('Classificador de gatos e cachorros',
           style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 25,
-              color: Color(0x0000ffff))),
+              fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white)),
       backgroundColor: Colors.blueAccent,
       showLoader: true,
-      loaderColor: Color(0x004242),
+      loaderColor: Colors.blueGrey,
     );
   }
 }
