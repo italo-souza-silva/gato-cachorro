@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Classificador de gatos e cães',
+        title: 'Classificador de gatos e cachorros',
         home: MySplash());
   }
 }

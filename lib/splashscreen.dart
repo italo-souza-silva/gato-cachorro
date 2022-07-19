@@ -17,7 +17,7 @@ class _MySplashState extends State<MySplash> {
     return SplashScreen(
       seconds: 2,
       navigateAfterSeconds: Home(),
-      title: const Text('Classificador de gatos e cães',
+      title: const Text('Classificador de gatos e cachorros',
           style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 25,
