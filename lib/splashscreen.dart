@@ -19,7 +19,7 @@ class _MySplashState extends State<MySplash> {
       durationInSeconds: 2,
       logoSize: 100,
       navigator: const Home(),
-      title: const Text('Classificador de gatos e cachorros',
+      title: const Text('Detector de gatos e cachorros',
           style: TextStyle(
               fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white)),
       backgroundColor: Colors.blueAccent,
